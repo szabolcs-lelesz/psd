@@ -1,0 +1,14 @@
+org\babosoft\psd\configurations\DataProvider.class
+org\babosoft\psd\services\SortingExecutorService.class
+org\babosoft\psd\algorithms\Sort.class
+org\babosoft\psd\services\ForkJoinPoolProvider.class
+META-INF\spring-configuration-metadata.json
+org\babosoft\psd\algorithms\ISorter.class
+org\babosoft\psd\algorithms\parallel\QuickSort.class
+org\babosoft\psd\algorithms\sequential\QuickSort.class
+org\babosoft\psd\algorithms\SortType.class
+org\babosoft\psd\configurations\PsdProperties.class
+org\babosoft\psd\algorithms\ParallelISorter.class
+org\babosoft\psd\PsdApplication.class
+org\babosoft\psd\algorithms\Sorter.class
+org\babosoft\psd\algorithms\parallel\QuickSort$QuickSortTask.class

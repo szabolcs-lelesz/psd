@@ -1,0 +1,20 @@
+{
+  "groups": [
+    {
+      "name": "application",
+      "type": "org.babosoft.psd.configurations.PsdProperties",
+      "sourceType": "org.babosoft.psd.configurations.PsdProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "application.array-size",
+      "type": "java.lang.Integer",
+      "sourceType": "org.babosoft.psd.configurations.PsdProperties"
+    }
+  ],
+  "hints": [],
+  "ignored": {
+    "properties": []
+  }
+}

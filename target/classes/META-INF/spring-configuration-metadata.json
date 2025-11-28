@@ -10,7 +10,8 @@
     {
       "name": "application.array-size",
       "type": "java.lang.Integer",
-      "sourceType": "org.babosoft.psd.configurations.PsdProperties"
+      "sourceType": "org.babosoft.psd.configurations.PsdProperties",
+      "defaultValue": 1000000
     }
   ],
   "hints": [],

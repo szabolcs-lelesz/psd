@@ -73,7 +73,7 @@ public class BenchmarkService {
             for (ISorter algorithm : algorithmList) {
                     algorithm.setDataProvider(warmupDataProvider);
                     double[] result = algorithm.compute();
-                    if (!isValid(result)) {
+                    if (!isValid(result) && i ==0) {
                         System.err.println(MessageFormat.format("Algorithm failed validation: {0}", algorithm));
                     }
             }
@@ -86,11 +86,12 @@ public class BenchmarkService {
             long start = System.currentTimeMillis();
             double[] result = algorithm.compute();
             long time = System.currentTimeMillis() - start;
-            consoleTable.addRow(algorithm.getName(), dataProvider.getArraySize(), time + " ms", "✅ OK");
+
             if (!isValid(result)) {
                 consoleTable.addRow(algorithm.getName(), dataProvider.getArraySize(), "HIBA", "❌ ");
-            }
+            } else consoleTable.addRow(algorithm.getName(), dataProvider.getArraySize(), time + " ms", "✅ OK");
         }
+        consoleTable.print();
     }
 
     public boolean isValid(double[] array) {

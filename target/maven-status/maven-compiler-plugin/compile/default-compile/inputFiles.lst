@@ -1,12 +1,25 @@
-C:\Users\Lelesz  Szabolcs\IdeaProjects\psd\src\main\java\org\babosoft\psd\algorithms\ISorter.java
-C:\Users\Lelesz  Szabolcs\IdeaProjects\psd\src\main\java\org\babosoft\psd\algorithms\parallel\QuickSort.java
-C:\Users\Lelesz  Szabolcs\IdeaProjects\psd\src\main\java\org\babosoft\psd\algorithms\ParallelISorter.java
-C:\Users\Lelesz  Szabolcs\IdeaProjects\psd\src\main\java\org\babosoft\psd\algorithms\sequential\QuickSort.java
-C:\Users\Lelesz  Szabolcs\IdeaProjects\psd\src\main\java\org\babosoft\psd\algorithms\Sort.java
-C:\Users\Lelesz  Szabolcs\IdeaProjects\psd\src\main\java\org\babosoft\psd\algorithms\Sorter.java
-C:\Users\Lelesz  Szabolcs\IdeaProjects\psd\src\main\java\org\babosoft\psd\algorithms\SortType.java
-C:\Users\Lelesz  Szabolcs\IdeaProjects\psd\src\main\java\org\babosoft\psd\configurations\DataProvider.java
-C:\Users\Lelesz  Szabolcs\IdeaProjects\psd\src\main\java\org\babosoft\psd\configurations\PsdProperties.java
-C:\Users\Lelesz  Szabolcs\IdeaProjects\psd\src\main\java\org\babosoft\psd\PsdApplication.java
-C:\Users\Lelesz  Szabolcs\IdeaProjects\psd\src\main\java\org\babosoft\psd\services\ForkJoinPoolProvider.java
-C:\Users\Lelesz  Szabolcs\IdeaProjects\psd\src\main\java\org\babosoft\psd\services\SortingExecutorService.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/PsdApplication.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/algorithms/ISorter.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/algorithms/ParallelSorter.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/algorithms/SortType.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/algorithms/Sorter.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/algorithms/SorterComponent.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/algorithms/bitonic/BitonicSort.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/algorithms/bitonic/ParallelSwapBitonicSort.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/algorithms/bitonic/SequentialSwapBitonicSort.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/algorithms/bitonic/SimdSwapBitonicSort.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/algorithms/bitonic/merge/ParallelSwapMergeTask.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/algorithms/bitonic/merge/SequentialSwapMergeTask.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/algorithms/bitonic/merge/SimdParallelSwapMergeTask.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/algorithms/quick/ParallelQuickSort.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/algorithms/quick/SequentialQuickSort.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/configurations/BitonicConfig.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/configurations/DataProvider.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/configurations/DataProviderImpl.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/configurations/PsdProperties.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/configurations/QuickSortConfig.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/configurations/WarmupConfig.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/services/BenchmarkService.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/services/ComparatorService.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/services/ConsoleTable.java
+/home/szlelesz/IdeaProjects/psd/src/main/java/org/babosoft/psd/services/ForkJoinPoolProvider.java

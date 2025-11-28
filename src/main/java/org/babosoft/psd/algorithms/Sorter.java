@@ -14,4 +14,12 @@ public abstract class Sorter implements ISorter {
         this.benchmarkService.registerAlgorithm(this);
     }
 
+    @Override
+    public String getName() {
+        SorterComponent sorterComponent = this.getClass().getAnnotation(SorterComponent.class);
+        if (sorterComponent == null) {
+            throw new IllegalArgumentException("SorterComponent annotation should be used with @" + SorterComponent.class.getSimpleName());
+        }
+        return sorterComponent.value();
+    }
 }

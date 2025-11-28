@@ -6,7 +6,7 @@ import jdk.incubator.vector.VectorSpecies;
 import java.util.concurrent.RecursiveAction;
 
 public class SimdParallelSwapMergeTask extends RecursiveAction {
-    static class SimdParallelSwapTask extends RecursiveAction {
+    class SimdParallelSwapTask extends RecursiveAction {
         private final double[] array;
         private final int start;
         private final int end;

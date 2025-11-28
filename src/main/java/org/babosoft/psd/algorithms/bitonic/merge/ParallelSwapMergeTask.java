@@ -3,7 +3,7 @@ package org.babosoft.psd.algorithms.bitonic.merge;
 import java.util.concurrent.RecursiveAction;
 
 public class ParallelSwapMergeTask extends RecursiveAction {
-    static class ParallelSwapTask extends RecursiveAction {
+    class ParallelSwapTask extends RecursiveAction {
         // Itt a küszöbérték lehet nagyobb, mert a compareAndSwap művelet nagyon gyors (olcsó).
         // Ha túl kicsire vesszük, a szálkezelés drágább lesz, mint a csere.
         private static final int SWAP_THRESHOLD = 8000;

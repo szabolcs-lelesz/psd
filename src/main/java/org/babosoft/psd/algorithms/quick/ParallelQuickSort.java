@@ -1,9 +1,12 @@
 package org.babosoft.psd.algorithms.quick;
 
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotNull;
 import org.babosoft.psd.algorithms.ParallelSorter;
 import org.babosoft.psd.algorithms.SorterComponent;
 import org.babosoft.psd.algorithms.SortType;
 import org.babosoft.psd.configurations.DataProvider;
+import org.babosoft.psd.configurations.QuickSortConfig;
 import org.babosoft.psd.services.ForkJoinPoolProvider;
 import org.babosoft.psd.services.BenchmarkService;
 
@@ -13,12 +16,14 @@ import java.util.concurrent.RecursiveAction;
 
 @SorterComponent(value = "parallelQuickSort",type = SortType.PARALLEL)
 class ParallelQuickSort extends ParallelSorter {
-    static class QuickSortTask extends RecursiveAction {
+    private final QuickSortConfig config;
+
+    class QuickSortTask extends RecursiveAction {
         // Küszöbérték a párhuzamosításhoz, ki kelelne vezetni property-be
-        private static final int THRESHOLD = 1000;
         private final double[] array;
         private final int low;
         private final int high;
+
         public QuickSortTask(double[] array, int low, int high) {
             this.array = array;
             this.low = low;
@@ -50,7 +55,7 @@ class ParallelQuickSort extends ParallelSorter {
 
         @Override
         protected void compute() {
-            if (high - low < THRESHOLD) {
+            if (high - low < config.getQuickSortInfo().getThreshold()) {
                 // Kis méretnél a beépített Arrays.sort-ot hívjuk
                 Arrays.sort(array, low, high + 1);
             } else {
@@ -63,8 +68,9 @@ class ParallelQuickSort extends ParallelSorter {
     }
 
 
-    public ParallelQuickSort(BenchmarkService benchmarkService, DataProvider dataProvider, ForkJoinPoolProvider forkJoinPoolProvider) {
+    public ParallelQuickSort(BenchmarkService benchmarkService, DataProvider dataProvider, ForkJoinPoolProvider forkJoinPoolProvider, QuickSortConfig config) {
         super(benchmarkService, dataProvider, forkJoinPoolProvider);
+        this.config = config;
     }
 
     @Override
